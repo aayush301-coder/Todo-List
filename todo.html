@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="todo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Todo App</title>
+  <link rel="stylesheet" href="todo.css">
 </head>
+
 <body>
-  <h1 id="main-heading">Todo App</h1>
 
-  <div class="grid-container">
-    <input id="todo-input" type="text" placeholder="Enter Todo here">
-    <input id="todo-date" type="date">
-    <button class='btn-todo' onclick="addTodo();">Add</button>
-  </div>
+  <main class="app">
 
-  <div class="todo-container grid-container"></div>
+    <h1 class="heading">Todo App</h1>
+
+    <div class="todo-input-section">
+      <input 
+        id="todo-input"
+        type="text"
+        placeholder="Enter todo..."
+        aria-label="Todo item"
+      >
+
+      <input 
+        id="todo-date"
+        type="date"
+        aria-label="Due date"
+      >
+
+      <button id="add-btn" class="btn-add">
+        Add
+      </button>
+    </div>
+
+    <div id="todo-container" class="todo-container"></div>
+
+  </main>
 
   <script src="todo.js"></script>
+
 </body>
 </html>
